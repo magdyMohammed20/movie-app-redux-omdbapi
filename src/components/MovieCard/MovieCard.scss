@@ -1,0 +1,40 @@
+@import '../../common/Colors.scss';
+
+.card-item{
+    overflow: hidden;
+    background-color: $primary-color;
+    position: relative;
+    transition: all .3s;
+    margin: 0 10px;
+    min-height: 370px;
+    height: 100%;
+    &:hover{
+        transform: scale(1.05);
+    }
+    .card-top{
+        height: 300px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .card-body{
+        padding: 7px;
+        h3{
+            font-weight: 400;
+        }
+        p,h3{
+            color: $font-primary;
+        }
+    }
+
+    .year{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $font-secondary;
+        color: $font-primary;
+        padding: 7px;
+    }
+}

@@ -1,0 +1,70 @@
+@import '../../common/Colors.scss';
+
+.movie-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+    .section-left{
+        h2{
+            color: $font-primary;
+            font-size: 2.5em;
+        }
+        p{
+            color: $font-muted;
+            line-height: 1.4;
+            margin: 30px 0;
+        }
+
+        .movie-data-info{
+            ul{
+                list-style: none;
+                li{
+                    color: $font-primary;
+                    margin: 20px 0;
+                }
+                span{
+                    color: $font-secondary
+                }
+            }
+        }
+
+    }
+    .movie-data-list{
+        display: flex;
+        list-style: none;
+        margin: 25px 0;
+        color: $font-secondary;
+        & > li:not(:nth-child(1)){
+            margin: 0 10px;
+        }
+
+        & > li{
+            i{
+                margin: 0 7px;
+            }
+
+            i.fa-star{
+                color: #ff9e00
+            }
+            i.fa-concierge-bell{
+                color: #fafafa
+            }
+            i.fa-clock{
+                color: rgb(191,214,213)
+            }
+            i.fa-calendar-alt{
+                color: peachpuff;
+            }
+        }
+    }
+
+    .section-right{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .loading{
+        color: $font-primary
+    }
+}
